@@ -1,5 +1,5 @@
 # osu-skinning-tool
 
 ### Planned features:
-    - Extras customizer
-    - ini editor
+    * Extras customizer
+    * Ini editor
