@@ -2,7 +2,7 @@ import os
 import pathlib
 import tkinter as tk
 import tkinter.ttk as ttk
-import ttkthemes as ttkh
+import ttkthemes as ttkt
 from tkinter import filedialog
 
 root = tk.Tk()
@@ -37,7 +37,7 @@ butExit.place(anchor="se",
 
 themes = ttk.Style().theme_names()
 ttk.Style().theme_use("clam")
-themes = ttkh.ThemedStyle(root).theme_names()
+themes = ttkt.ThemedStyle(root).theme_names()
 
 theme = 0
 def switchTheme():
@@ -59,7 +59,7 @@ butThemeSwitch.place(anchor="se",
                     relx="0.95",
                     rely="0.15")
 
-ttkh.ThemedStyle(root).set_theme("black")
+ttkt.ThemedStyle(root).set_theme("black")
 root.configure(bg="#333")
 
 skDir = pathlib.Path(__file__).parent.absolute()
